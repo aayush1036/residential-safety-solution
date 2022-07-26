@@ -38,7 +38,15 @@ python detect.py --society YOUR_SOCIETY_NAME --position ENTRY/EXIT --device 0/1/
 6. If you want to retrain the model on custom data, please refer to the kaggle notebook published on <a href="https://www.kaggle.com/code/aayusmaanjain/license-plate-detection/">License plate detection notebook</a> by me and please upvote it and comment on it if you liked it
 
 # Demo 
-<img src="working.gif">
+<img src="assets/working.gif">
+
+# User Interface 
+1. Home page <br>
+<img src="assets/homepage.png" width = 960px height=540px>
+1. To register person <br>
+<img src="assets/register_person.png" width = 960px height=540px>
+2. To register vehicle <br>
+<img src="assets/register_vehicle.png" width = 960px height=540px>
 
 # Future prospects 
 1. Improve OCR 
