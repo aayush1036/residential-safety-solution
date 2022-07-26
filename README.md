@@ -48,6 +48,8 @@ python detect.py --society YOUR_SOCIETY_NAME --position ENTRY/EXIT --device 0/1/
 2. To register vehicle <br>
 <img src="assets/register_vehicle.png" width = 960px height=540px>
 
+Detailed explanation of the project can be found on <a href="https://aayushmaan1306.medium.com/residential-safety-solutions-with-yolo-v5-b61801361cd9">Medium Article</a>. Please upvote the article if you find it helpful
+
 # Future prospects 
 1. Improve OCR 
 2. Make predictions more faster
