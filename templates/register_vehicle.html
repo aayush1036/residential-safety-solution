@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Person</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{url_for('static',filename='styles.css')}}">
+
+</head>
+
+<body>
+  <form method="POST" action="{{url_for('register_vehicle')}}">
+    <div class="mb-3">
+      <label for="manufacturer">Enter manufacturer name</label>
+      <input type="text" class="form-control" name="manufacturer">
+    </div>
+
+    <div class="mb-3">
+      <label for="model">Enter model name</label>
+      <input type="text" class="form-control" name="model">
+    </div>
+
+    <div class="mb-3">
+      <label for="license">Enter license plate number</label>
+      <input type="text" class="form-control" name="license">
+    </div>
+
+    <div class="mb-3">
+      <label for="society">Enter your society name</label>
+      <input type="text" class="form-control" name="society">
+    </div>
+
+    <div class="mb-3">
+      <label for="parking_lot">Enter your parking lot number</label>
+      <input type="text" class="form-control" name="parking_lot">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  {% if statusCode == "Success" %}
+  <div class="alert alert-success" role="alert">
+    Congratulations, your vehicle has been registered in our database 
+  </div>
+  {% elif statusCode == "Exists" %}
+  <div class="alert alert-danger" role="alert">
+    The vehicle has already been regstered in the database 
+  </div>
+  {% else %}
+    Please enter the details
+  {% endif %}
+
+  <br>
+  
+  <a href="{{url_for('home')}}">
+    <button type="button" class="btn btn-dark">HOME</button>
+  </a>
+
+  <a href="{{url_for('register_person')}}">
+    <button type="button" class="btn btn-dark">REGISTER PERSON</button>
+  </a>
+
+</body>
+
+</html>
